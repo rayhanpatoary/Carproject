@@ -17,9 +17,23 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 from.import Views
+from django.urls import include, path
+from rest_framework import routers
+from Devportfolio import views
+
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
+
 urlpatterns = [
+    
+    path('', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+
+
+
     path('admin/', admin.site.urls),
-    path('', Views.home ),
+    path('home/', Views.home ),
     path('about/', Views.about),
     path('contact/', Views.contact),
     path('DevPortfolio/', include('Devportfolio.urls'))
