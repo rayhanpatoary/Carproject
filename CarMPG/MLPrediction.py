@@ -8,7 +8,7 @@ import joblib
 
 # This function is called from Views.py to get the prediction based on 6 parameters
 def prediction_function( cylender, displacement , horsepower , weight , acceleration , modelyear , origin ):
-      carMPGmodel=joblib.load('CarProject/MLModelforMPG.pkl') #Load our Machine Learning model 
+      carMPGmodel=joblib.load('CarMPG/MLModelforMPG.pkl') #Load our Machine Learning model 
       temp={} # creare a temporary Variable
       #assign values:
       temp['cylinders']=cylender
@@ -23,7 +23,7 @@ def prediction_function( cylender, displacement , horsepower , weight , accelera
       return result; # return result
 
 
-
+print(prediction_function( 1, 2 , 3 , 4 , 5 , 6 , 7 ))
 
 
 

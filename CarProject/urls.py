@@ -43,6 +43,8 @@
 # ]
 
 
+from django import urls
+
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
@@ -52,11 +54,14 @@ from CarProject import Views
 
 
 urlpatterns = [
-    path('',Views.Prediction),
-    
+   # path('prediction/',Views.Prediction),
+
     path('admin/', admin.site.urls),
     # home
-    path('api/', include('dev_portfolio.urls'))
+    path('api/', include('dev_portfolio.urls')),
+
+    path('mpg/', include('CarMPG.urls')),
+    
 ]
 
 
