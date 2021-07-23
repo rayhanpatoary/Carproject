@@ -60,7 +60,7 @@ urlpatterns = [
     # home
     path('api/', include('dev_portfolio.urls')),
 
-    path('mpg/', include('CarMPG.urls')),
+    path('car/', include('CarMPG.urls')),
     
 ]
 
