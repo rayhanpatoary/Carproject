@@ -48,11 +48,16 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
+from CarProject import Views
 
 
 urlpatterns = [
+    path('',Views.Prediction),
+    
     path('admin/', admin.site.urls),
     # home
-    path('', TemplateView.as_view(template_name="profile.html")),
-    path('api/', include('Devportfolio.urls'))
-] 
+    path('api/', include('dev_portfolio.urls'))
+]
+
+
+
