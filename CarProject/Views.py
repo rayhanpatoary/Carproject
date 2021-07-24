@@ -1,10 +1,10 @@
 
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def home(request):
-    message = "This is home page message"
-    return HttpResponse(message)
+    return render(request,'HomePage/home.html')
 
 def about(request):
     message = "This is our about page message"
@@ -18,3 +18,7 @@ def contact(request):
 def sample(request):
     
     return HttpResponse("This is sample")
+
+
+
+    

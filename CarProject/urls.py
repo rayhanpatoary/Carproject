@@ -55,7 +55,7 @@ from CarProject import Views
 
 urlpatterns = [
    # path('prediction/',Views.Prediction),
-
+    path('',Views.home),
     path('admin/', admin.site.urls),
     # home
     path('api/', include('dev_portfolio.urls')),
