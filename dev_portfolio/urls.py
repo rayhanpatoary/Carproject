@@ -1,3 +1,4 @@
+from CarProject.Views import sample
 from django.urls import path, include
 from rest_framework import routers
 from . import views
@@ -9,6 +10,6 @@ router.register('developer', DeveloperViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('developer/', views.DeveloperViewSet)
-
+    path('developer/', views.DeveloperViewSet),
+    path('sample/', views.sample)
 ]

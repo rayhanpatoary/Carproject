@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request,'HomePage/home.html')
+    return render(request,'CarMPG/predictionResult.html')
 
 def about(request):
     message = "This is our about page message"
