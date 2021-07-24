@@ -4,21 +4,17 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request,'CarMPG/predictionResult.html')
-
-def about(request):
-    message = "This is our about page message"
-    return HttpResponse(message)
-
-def contact(request):
-    message = "This is our Contact page message"
-    return HttpResponse(message)
+    return render(request,'home.html')
 
 
-def sample(request):
-    
-    return HttpResponse("This is sample")
+def managedb(request):
+    return render(request,'manageDB.html')
 
 
+def mpgprediction(request):
+    return render(request,'mpg_prediction.html')
+
+def aboutproject(request):
+    return render(request,'about_project.html')
 
     

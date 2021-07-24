@@ -54,13 +54,17 @@ from CarProject import Views
 
 
 urlpatterns = [
-   # path('prediction/',Views.Prediction),
-    path('',Views.home),
-    path('admin/', admin.site.urls),
-    # home
-    path('api/', include('dev_portfolio.urls')),
+   
+    path('',Views.home), # home page will be visiable in deafult port
+    path('managedb/',Views.managedb), # Show database table, Update and Delete data page
+    path('mpgprediction/',Views.mpgprediction), # take input perameters and make a prediction page
+    path('aboutproject/',Views.aboutproject), # in this path project documentation pdf will be visiable
 
-    path('car/', include('CarMPG.urls')),
+    path('admin/', admin.site.urls), # check all the admin list
+    # home
+    path('api/developer/', include('dev_portfolio.urls')), # include developer Portfolio app for api creation
+
+    path('api/car/', include('CarMPG.urls')), # connect with CarMPG App Url
     
 ]
 

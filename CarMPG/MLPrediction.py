@@ -22,7 +22,6 @@ def prediction_function( cylender, displacement , horsepower , weight , accelera
       result = carMPGmodel.predict(testDtaa)[0] # Doing the prediction
       return result; # return result
 
-
 print(prediction_function( 1, 2 , 3 , 4 , 5 , 6 , 7 ))
 
 

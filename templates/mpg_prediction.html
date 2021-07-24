@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.resultbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.resultbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Input Data and See the MPG of the car!</h1>
+    <p>Please fill all the fields</p>
+    <hr>
+
+    <label for="name"><b>Car name</b></label>
+    <input type="text" placeholder="Enter car Name" name="car_name" id="car_name" required>
+
+    <label for="Cylinders"><b>Cylinders</b></label>
+    <input type="text" placeholder="Cylinders" name="cylinders" id="cylinders" required>
+
+    <label for="Displacement"><b>Displacement</b></label>
+    <input type="text" placeholder="displacement" name="displacement" id="displacement" required>
+
+    <label for="horsepower"><b>horsepower</b></label>
+    <input type="text" placeholder="horsepower" name="horsepower" id="horsepower" required>
+
+    <label for="weight"><b>weight</b></label>
+    <input type="text" placeholder="weight" name="weight" id="weight" required>
+
+    <label for="acceleration"><b>acceleration</b></label>
+    <input type="text" placeholder="acceleration" name="acceleration" id="acceleration" required>
+
+    <label for="model_year"><b>model year</b></label>
+    <input type="text" placeholder="model year" name="model_year" id="model_year" required>
+
+    <label for="origin"><b>origin</b></label>
+    <input type="text" placeholder="origin" name="origin" id="origin" required>
+
+    <hr>
+    
+
+    <button type="submit" class="resultbtn">Show MPG</button>
+  </div>
+  
+  <div class="container result">
+    <p>MPG = <a href="#">Save to Database</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
