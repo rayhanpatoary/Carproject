@@ -5,10 +5,9 @@ from .views import DeveloperViewSet
 
 router = routers.DefaultRouter()
 
-router.register('developer', DeveloperViewSet)
+router.register('list', DeveloperViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('developer/', views.DeveloperViewSet),
-    
+    #path('developer/', views.DeveloperViewSet),
 ]

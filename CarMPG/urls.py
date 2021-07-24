@@ -5,13 +5,13 @@ from .views import CarViewSet
 
 
 router = routers.DefaultRouter()
-router.register('car', CarViewSet)
+router.register('list', CarViewSet)
 
 
 urlpatterns = [
    # path('prediction/',Views.Prediction),
      path('', include(router.urls)),
-     path('mpg/', views.CarViewSet),
+     #path('mpg/', views.CarViewSet),
      
      
     
