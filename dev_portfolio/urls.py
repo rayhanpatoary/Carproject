@@ -5,7 +5,7 @@ from .views import DeveloperViewSet
 
 router = routers.DefaultRouter()
 
-router.register('list', DeveloperViewSet)
+router.register('list', DeveloperViewSet) # Register Developer database to /list url
 
 urlpatterns = [
     path('', include(router.urls)),

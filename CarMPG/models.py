@@ -1,8 +1,8 @@
 from django.db import models
 
-# Create your models here.
 
-class Car(models.Model):
+
+class Car(models.Model): # Creating Model for Car Database table
     car_name = models.CharField(max_length=50, null=False, blank=False)
     mpg = models.CharField(max_length=20, null=False, blank=False)
     cylinders = models.CharField(max_length=20, null=False, blank=False)

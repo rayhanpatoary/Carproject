@@ -9,8 +9,8 @@ def home(request):
 
 
 def managedb(request):
-    r = requests.get('http://127.0.0.1:8000/api/car/list')
-    context={'db_all':r.json()}
+    r = requests.get('http://127.0.0.1:8000/api/car/list') # read Json api 
+    context={'db_all':r.json()} 
     return render(request,'manageDB.html',context)
        
 
