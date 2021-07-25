@@ -1,4 +1,4 @@
-# Miles per gallon Prediction Project in Django
+# Car's Miles per gallon Prediction Project in Django
 
 The main goal of this project is to try to connect the user with a machine learning model through a web framework.
 Where the user will give seven data inputs about a car and after clicking a button he can find out how many miles the car can travel in one gallon .
